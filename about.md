@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+공부하고 오래 기억하기위해 기록합니다 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[wiseyoon0110@gmail.com](mailto:wiseyoon0110@gmail.com)
