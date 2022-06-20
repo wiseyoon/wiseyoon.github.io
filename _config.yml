@@ -110,3 +110,4 @@ exclude:
 
 markdown: kramdown
 highlighter: rouge
+future: true
