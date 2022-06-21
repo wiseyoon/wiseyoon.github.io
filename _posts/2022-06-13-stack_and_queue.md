@@ -88,6 +88,37 @@ public static void main(String[] args) {
 }
 ```
 
+--- 
+
+## Priority Queue 
+- 위에서 본 Queue는 먼저 들어온 데이터가 먼저 나가는 FIFO 형식의 자료구조이다.
+- 우선순위큐는 먼저 들어온 데이터가 아니라 우선순위가 높은 데이터가 먼저 나가는 형식의 자료구조이다.
+- 우선순위큐는 일반적으로 Heap을 이용하여 구현한다.
+- enqueue() : queue에 새 요소를 삽입한다.
+- dequeue() : queue에서 최대 우선순위 요소를 삭제하고 그 값을 반환한다.
+- peek() : queue에서 최대 우선순위 요소를 반환한다.
+- 데이터를 삽입할 때 우선순위 기준으로 최대힙 또는 최소힙을 구성하고 데이터를 꺼낼 때 루트 노드를 얻어낸다.
+- 루트 노드를 삭제할 떄 빈 루트 노드 위치에 맨 마지막 노드를 삽입한 후 아래로 내려가면서 적절한 자리를 찾아 옮기는 방식이다.
+- 시간복잡도는 O(NlogN)이다.
+
+## 사용법
+```java
+import java.util.PriorityQueue; //import
+
+//int형 priorityQueue 선언 (우선순위가 낮은 숫자 순)
+PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+
+//int형 priorityQueue 선언 (우선순위가 높은 숫자 순)
+PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
+
+//String형 priorityQueue 선언 (우선순위가 낮은 숫자 순)
+PriorityQueue<String> priorityQueue = new PriorityQueue<>(); 
+
+//String형 priorityQueue 선언 (우선순위가 높은 숫자 순)
+PriorityQueue<String> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
+
+```
+
 ---
 
 [참고] [https://velog.io/@nnnyeong/자료구조-스택-Stack-큐-Queue-덱-Deque](https://velog.io/@nnnyeong/자료구조-스택-Stack-큐-Queue-덱-Deque)
